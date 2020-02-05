@@ -1,0 +1,36 @@
+CREATE TABLE `exchanges_data` (
+	`id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`Symbol` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Exchange` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Company_name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Trade_date` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Trade_time` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Option_trade_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Trade_size` INT(11) NULL DEFAULT NULL,
+	`Trade_exchange` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Trade_condition` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Option_symbol` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Option_expiration` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Price_strike` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Call_Put` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Style` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Bid_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Bid_time` TIME NULL DEFAULT NULL,
+	`Bid_size` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Bid_exchange` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Ask_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Ask_time` TIME NULL DEFAULT NULL,
+	`Ask_size` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Ask_exchange` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci',
+	`Underlying_bid_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Underlying_ask_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Underlying_bid_time` TIME NULL DEFAULT NULL,
+	`Underlying_ask_time` TIME NULL DEFAULT NULL,
+	`Underlying_last_price` DOUBLE(255,3) NULL DEFAULT NULL,
+	`Underlying_last_time` TIME NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=20
+;
